@@ -22,9 +22,12 @@ h3{ color: rgb(228, 222, 217);
   font-size: 2rem;}
 h4{ color: rgb(228, 222, 217);}
 .contenedor{
-  background-image:url(../Proyecto/Assets/Img/keto-5534051_640.jpg);
+  /*background-image:url(../Proyecto/Assets/Img/keto-5534051_640.jpg);
+  backdrop-filter: blur(20px);*/
+  
   background-color: rgb(138, 114, 9);  
-            display: flex;
+             display: flex;
+             flex-wrap:wrap ;
              flex-direction: row;
              justify-content:space-between;
              justify-content: space-evenly;
@@ -69,10 +72,11 @@ h1{ color: rgb(228, 222, 217);
       
     div.gallery {
 
-        margin: 15px;
+        margin:10px;
         border: 1px solid #6e6405;
         float: left;
-        width: 180px;
+        width: 180px; 
+        
       }
       
       div.gallery:hover {
@@ -92,7 +96,9 @@ h1{ color: rgb(228, 222, 217);
         
       }
 
-.header{background-color: rgb(129, 79, 3);}
+.header{background-color: rgb(129, 79, 3);
+        position: sticky;
+        z-index:10;}
 .primaryColor{ background-color: rgb(192, 118, 8); 
  
     color: rgb(255, 255, 255);
@@ -100,7 +106,7 @@ h1{ color: rgb(228, 222, 217);
     font-optical-sizing: auto;
     font-weight: 300;
     font-style: normal;} 
-.timagenesVarias{width: "200px"; height: "300px";}
+.imagenesVarias{width: "200px"; height: "300px";}
 
 .buscadorPeliculas{
   display: flex;
@@ -235,7 +241,10 @@ h1{ color: rgb(228, 222, 217);
   
   .bodyRecetas{
     margin-left: 25;
-    background-image:url("../Proyecto/Assets/Img/keto-5534051_640.jpg"); 
+    /*background-image:url("../Proyecto/Assets/Img/keto-5534051_640.jpg"); 
+    backdrop-filter: blur(20px);*/
+    text-indent: 10px;
+    background-color: rgb(192, 118, 8);
     background-repeat: no-repeat;
     background-size: cover;
     font-size: 2rem;
@@ -245,7 +254,26 @@ h1{ color: rgb(228, 222, 217);
     ul,ol{color:#6e6405; font-style: oblique}
   }
     
+  @media screen and (max-width: 768px;) {
+     h1{
+    font-size: 2.2rem;}
+ h2{font-size:1.2rem;}
+ .navigation{
+  max-width: fit-content;
+  div.gallery {
+    width: 90%;
+  }
   
+  
+
+  }
+  @media screen and (min-width:769px) and (max-width=992px){
+    h1{
+      font-size: 2.5rem;}
+   h2{font-size:1.5rem;}
+    
+  }
+    
 
 
 
