@@ -1,8 +1,8 @@
 * {
   font-family: "Roboto Slab", serif;
   font-optical-sizing: auto;
-  margin:0
-  padding:0
+  margin:0;
+  padding:0;
   font-style: normal;
   
 }
@@ -106,8 +106,8 @@ h1{ color: rgb(228, 222, 217);
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 1rem;
-  .inputBuscador{
+  margin-top: 1rem;}
+.inputBuscador{
       border: 2px solid white;
       border-radius: 25px;
       color: #ffffff;
@@ -131,7 +131,7 @@ h1{ color: rgb(228, 222, 217);
       border: 2px solid white;
       text-align: center;
   }
-}
+
 .peliculas{
   display: flex;
   justify-content: center;
@@ -181,25 +181,30 @@ h1{ color: rgb(228, 222, 217);
             color:#ffffff}
         .opciones {font-size: 1rem;
           color:#1a1101}
-        }
+        
        form{
           
         width: 50%;
         text-align: center;
-       
-        input:not(.check,.boton),select{
+        border-radius: 25px;
+        display:block;
+        padding-left: center;
+        input:not(.check),select{
+          
+          margin-top: 1rem;
             width: 80%;
             height: 35px;
             font-size: 1rem;
-            color:#ffffff
+            color:#be7e1d
             ;
             background-color: transparent
         }
-        .terminos{
+      .terminos{
             width: 80%;
             margin:0 auto;
             font-size: 0.7rem;
         }
+       
         .boton{
           background-color: #6e6405;
             margin-top: 20px;
@@ -207,17 +212,27 @@ h1{ color: rgb(228, 222, 217);
             width: 30%;
             padding: 0.8rem 0.8rem;
             font-size: 0.8rem;
-            
-            
         }
+        .inputRegistrarse{
+          border: 2px solid rgb(92, 86, 6);
+          border-radius: 25px;
+          color: #ffffff;
+          font-size: 1.2rem;
+          height: 30px;
+          margin: 25px 0px;
+          outline: none;
+          padding: 0px 25px;
+          width: 250px;
+
+      }
         .ayuda{
             text-align: left;
             font-size: 0.8rem;
         }
-      
-
+       }
+      }
     
-  }
+  
   .bodyRecetas{
     margin-left: 25;
     background-image:url("../Proyecto/Assets/Img/keto-5534051_640.jpg"); 
