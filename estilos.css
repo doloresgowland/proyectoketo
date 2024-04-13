@@ -6,8 +6,10 @@
   font-style: normal;
   
 }
-.header{background-color: rgb(129, 79, 3);}
 
+.header{background-color: rgb(129, 79, 3);
+  position: sticky;
+  z-index:10;}
 h1{ color: rgb(228, 222, 217);
     text-align: center;
     font-size: 3rem;}
@@ -18,7 +20,6 @@ h2{ color: rgb(228, 222, 217);
 h3{ color: rgb(228, 222, 217);
   text-align: center;
   height: 2vh;
-
   font-size: 2rem;}
 h4{ color: rgb(228, 222, 217);}
 .contenedor{
@@ -26,20 +27,15 @@ h4{ color: rgb(228, 222, 217);}
   backdrop-filter: blur(20px);*/
   
   background-color: rgb(138, 114, 9);  
-             display: flex;
-             flex-wrap:wrap ;
-             flex-direction: row;
-             justify-content:space-between;
-             justify-content: space-evenly;
-             justify-content: space-around;
-             padding: 20px;
-             align-items: center;
-             }
-      
-
-h1{ color: rgb(228, 222, 217);
-    text-align: center;
-    font-size: 3rem;}
+  display: flex;
+  flex-wrap:wrap ;
+  flex-direction: row;
+  justify-content:space-between;
+  justify-content: space-evenly;
+  justify-content: space-around;
+  padding: 20px;
+  align-items: center;
+  }
 .navigation{
     ul {
         list-style-type: none;
@@ -49,11 +45,11 @@ h1{ color: rgb(228, 222, 217);
         background-color: #333;
       }
       
-      li {
+    li {
         float: left;
       }
       
-      a {
+    a {
         display: block;
         color: rgb(226, 215, 149);
         text-align: center;
@@ -62,46 +58,35 @@ h1{ color: rgb(228, 222, 217);
         font-size: 18pt;
       }
       
-      li a:hover:not(.active) {
+    li a:hover:not(.active) {
         background-color: #111;
       }
-      
-      
+  }
+  div.gallery {
+    margin:10px;
+    border: 1px solid #6e6405;
+    float: left;
+    width: 180px; 
     }
-    
       
-    div.gallery {
+    div.gallery:hover {
+      border: 1px solid #442702;
+    }
+      
+    div.gallery img {
+      width: 100%;
+      height: 200px;
+    }
+      
+    div.desc {
+      padding: 15px;
+      text-align: center;
+      font-size: 14; 
+      color: rgb(31, 31, 13); 
+    }
 
-        margin:10px;
-        border: 1px solid #6e6405;
-        float: left;
-        width: 180px; 
-        
-      }
-      
-      div.gallery:hover {
-        border: 1px solid #442702;
-      }
-      
-      div.gallery img {
-        width: 100%;
-        height: 200px;
-      }
-      
-      div.desc {
-        padding: 15px;
-        text-align: center;
-        font-size: 14; 
-        color: rgb(31, 31, 13); 
-        
-      }
-
-.header{background-color: rgb(129, 79, 3);
-        position: sticky;
-        z-index:10;}
 .primaryColor{ background-color: rgb(192, 118, 8); 
- 
-    color: rgb(255, 255, 255);
+    color: rgb(235, 208, 135);
     font-family: "Roboto Slab", serif;
     font-optical-sizing: auto;
     font-weight: 300;
@@ -154,91 +139,27 @@ h1{ color: rgb(228, 222, 217);
       }
     }
   }
-  .recetasBuscadas{
- 
-    .tituloSection{
-        font-size: 2rem;
+.recetasBuscadas{
+  .tituloSection{
+      font-size: 2rem;
     }
-    .buscadas{
-      display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap:60px;
+  .buscadas{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap:60px;
         .recetaItem{
             width: 150px;
             min-width: 150px;
             font-size: 15px;
-            margin-left: 20px;
-            .imgReceta{
+            margin-left: 20px;}
+        .imgReceta{
                 width: 90%;
                 height: 90%;
-            }
           }
-        }
-      }
-
-      .seccionRegistrarse{
-        
-        width: 90%;
-        align-items: center;
-        padding-left: 100px;
-        .tituloRegistrarse{
-          font-size: 2rem;
-            color:#ffffff}
-        .opciones {font-size: 1rem;
-          color:#1a1101}
-        
-       form{
-          
-        width: 50%;
-        text-align: center;
-        border-radius: 25px;
-        display:block;
-        padding-left: center;
-        input:not(.check),select{
-          
-          margin-top: 1rem;
-            width: 80%;
-            height: 35px;
-            font-size: 1rem;
-            color:#be7e1d
-            ;
-            background-color: transparent
-        }
-      .terminos{
-            width: 80%;
-            margin:0 auto;
-            font-size: 0.7rem;
-        }
-       
-        .boton{
-          background-color: #6e6405;
-            margin-top: 20px;
-            margin-bottom: 20px;
-            width: 30%;
-            padding: 0.8rem 0.8rem;
-            font-size: 0.8rem;
-        }
-        .inputRegistrarse{
-          border: 2px solid rgb(92, 86, 6);
-          border-radius: 25px;
-          color: #ffffff;
-          font-size: 1.2rem;
-          height: 30px;
-          margin: 25px 0px;
-          outline: none;
-          padding: 0px 25px;
-          width: 250px;
-
-      }
-        .ayuda{
-            text-align: left;
-            font-size: 0.8rem;
-        }
-       }
-      }
-    
-  
+    }
+  }
+ 
   .bodyRecetas{
     margin-left: 25;
     /*background-image:url("../Proyecto/Assets/Img/keto-5534051_640.jpg"); 
@@ -249,23 +170,109 @@ h1{ color: rgb(228, 222, 217);
     background-size: cover;
     font-size: 2rem;
     font-weight: 300;
-    h2{
+     h2{
     color: #6e6405}
     ul,ol{color:#6e6405; font-style: oblique}
   }
+  .seccionRegistrarse{
     
+    width: 90%;
+    align-items: center;
+    padding-left: 100px;
+    background-image: url(../Proyecto/images/gratisography-funflower.jpg);
+    background-repeat: no-repeat;
+     background-size:cover  ;
+    .tituloRegistrarse{
+        font-size: 2rem;
+        color:#ffffff;
+
+    }
+    
+  
+    }
+    .formulario{
+     padding-top: 10px;
+      width: 70%;
+      text-align: center;
+      border-radius: 25%;
+      border-color: #53482a;
+      display:block;
+      padding-left: center;
+      font-size: 1rem;
+      color:#302106;
+      color: fieldtext #1a1101;
+      padding-bottom: 8px;
+      margin-bottom: 5px;
+      
+    }
+    .terminos{
+          width: 80%;
+          margin:0 auto;
+          font-size: 0.7rem;
+    }
+    .opciones {font-size: 1rem; 
+        color:#1a1101
+    }
+     
+    .boton{
+        background-color: #6e6405;
+          margin-top: 20px;
+          margin-bottom: 20px;
+          width: 30%;
+          padding: 0.8rem 0.8rem;
+          font-size: 0.8rem;
+      }
+    .inputRegistrarse{
+        border: 2px solid rgb(92, 86, 6);
+        border-radius: 25px;
+        color: #ffffff;
+        font-size: 1.2rem;
+        height: 30px;
+        margin: 25px 0px;
+        outline: none;
+        padding: 0px 25px;
+        width: 250px;
+
+    }
+      .ayuda{
+          text-align: left;
+          font-size: 0.8rem;
+      }
+     }
+    input:not(.check),select{
+        margin-top: 1rem;
+        width: 80%;
+        height: 35px;
+        font-size: 1rem;
+        color:#be7e1d;
+        background-color: transparent;
+    }
+  .terminos{
+        width: 80%;
+        margin:0 auto;
+        font-size: 0.7rem;
+  }
+  .boton{
+      background-color: #6e6405;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        width: 30%;
+        padding: 0.8rem 0.8rem;
+        font-size: 0.8rem;
+  }
+
+}   
   @media screen and (max-width: 768px;) {
      h1{
     font-size: 2.2rem;}
- h2{font-size:1.2rem;}
+    h2{font-size:1.2rem;}
  .navigation{
   max-width: fit-content;
   div.gallery {
     width: 90%;
   }
   
-  
-
+}
   }
   @media screen and (min-width:769px) and (max-width=992px){
     h1{
