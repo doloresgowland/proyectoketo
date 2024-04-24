@@ -76,11 +76,17 @@ h4{ color: rgb(228, 222, 217);}
     border: 1px solid #6e6405;
     float: left;
     width: 180px; 
+    transition: transform 1s;
+    &:hover{
+      transition: translate(200px,200px) scale(1.5);
+    }
+
     }
       
     div.gallery:hover {
       border: 1px solid #442702;
-    }
+      
+     }
       
     div.gallery img {
       width: 100%;
@@ -292,6 +298,26 @@ h4{ color: rgb(228, 222, 217);}
     
   }
     
-
+footer{
+  nav{ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    column-gap: 20px;}
+    li{
+      a {text-decoration: none;
+        color:var( --main -color);
+        font-size: 1.2rem;}
+        a:hover{text-decoration: underline;
+        color: var(--main-color);
+        font-size: 1.2rem;
+      }
+     }
+     .flechaArriba{position:fixed
+        bottom=20px
+       right=20px;}
+}
+}
 
 
