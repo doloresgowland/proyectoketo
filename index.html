@@ -13,6 +13,7 @@
      <!--el icono que represeta al sitio web y se ve en la pestaña-->
 </head>
 <body class="primaryColor">
+    
     <header class="header">
         <nav class="navigation" >
             
@@ -106,6 +107,26 @@
         
     </section>
     </main>
+    <script>
+        // Replace 'YOUR_API_KEY' with your actual API key
+        const apiKey = 'b41a44fe3f958158ab156d8d52b1c4b4';
+        const city = 'Buenos Aires'; // Replace with the desired city
+
+        fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`)
+            .then(response => response.json())
+            .then(data => {
+                const weather = data.weather[0].main;
+                const temp = Math.round(data.main.temp);
+
+                const weatherInfoElement = document.getElementById('weather-info'); // Get the container element
+                weatherInfoElement.textContent = `El clima actual en ${city} es ${weather} y la temperatura es ${temp}°C`;
+            })
+            .catch(error => {
+                console.error('Error fetching weather data:', error);
+            });
+    </script>
+
+    <div id="weather-info"></div>
     <footer class="footer">
         <nav>
             <ul>
@@ -114,7 +135,7 @@
                 <li><a href="">Administrador del sitio</a> </li>
             </ul>
             <a href="#main" class="flechaArriba">
-                <img src="./images/flecha-arriba.png" alt="ir arriba flecha">
+                <img src="./images/OIP.jpg" alt="ir arriba flecha" width="75px" heigth="75px">
             </a>
         </nav>
     </footer>

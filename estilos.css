@@ -6,6 +6,13 @@
   font-style: normal;
   
 }
+.weather-info {
+  font-size: 1.2rem;
+  margin: 1rem;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
 
 header{background-color: rgb(129, 79, 3);
   position: sticky;
